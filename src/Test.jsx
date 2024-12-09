@@ -5,7 +5,7 @@ const Test = () => {
   const [selectedId, setSelectedId] = useState(null)
 
   const handleSelected = (id) => {
-    setSelectedId(id)
+    setSelectedId(id !== selectedId ? id : null)
   }
   return (
     <div className='flashcards'>
